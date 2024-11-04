@@ -66,18 +66,18 @@ main h1 {
 .interested {
     font-size: 1.2em;
     margin-bottom: 40px;
-    color:rgb(75, 144, 255)
+    color:rgb(75, 111, 255)
 }
 .down-arrow {
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 30px solid rgb(75, 144, 255);
+    border-top: 30px solid rgb(75, 111, 255);
     margin: 10px auto;
 }
 .join-link {
-    background-color:  rgb(75, 144, 255);
+    background-color:  rgb(75, 111, 255);
     color: #2d2d3f;
     padding: 20px 40px;
     text-decoration: none;
