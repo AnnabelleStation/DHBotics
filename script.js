@@ -50,10 +50,10 @@ document.addEventListener("scroll", function() {
     
     const gearHeight = document.querySelector(".gear").getBoundingClientRect();
     const gearoffset = gearHeight.top - centerpoint;
-    let multiply_rot = window.innerWidth / 3000;
+    let multiply_rot = window.innerWidth / 2000;
 
 
-    const gear_rot = gearoffset * multiply_rot;
+    const gear_rot = gearoffset * Math.min(multiply_rot, .2);
 
     document.querySelector(".gearL").style.transform = "rotate(" + gear_rot + "deg)";
     document.querySelector(".gearR").style.transform = "rotate(" + (-gear_rot) + "deg)";
