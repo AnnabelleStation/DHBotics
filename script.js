@@ -50,7 +50,7 @@ document.addEventListener("scroll", function() {
     
     const gearHeight = document.querySelector(".gear").getBoundingClientRect();
     const gearoffset = gearHeight.top - centerpoint;
-    let multiply_rot = window.innerWidth / 1500;
+    let multiply_rot = window.innerWidth / 2000;
 
 
     const gear_rot = gearoffset * multiply_rot;
