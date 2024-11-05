@@ -112,14 +112,14 @@ main h1 {
 
 .gearR {
     position: absolute;
-    right: -15vw; 
+    right: -10vw; 
     transform: translateY(-50%);
     width: 40vw;
     transition: transform 0.2s linear;
 }
 .gearL {
     position: absolute;
-    left: -15vw; 
+    left: -10vw; 
     transform: translateY(-50%);
     width: 40vw;
     transition: transform 0.2s linear;
