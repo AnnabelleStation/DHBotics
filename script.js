@@ -11,7 +11,7 @@ document.addEventListener("scroll", function() {
          } else {
 
          const viewportProximity = Math.min(Math.abs(rect.top - windowHeight/2), Math.abs(rect.bottom - windowHeight / 2));
-         const outofRange = windowHeight * 0.2;
+         const outofRange = windowHeight * 0.3;
          const opacity = Math.max(0, 1 - (viewportProximity / outofRange));
 
          element.style.opacity = opacity;
