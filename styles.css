@@ -8,40 +8,56 @@
 }
 body {
     position: relative;
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: clamp(16px, 4vw, 40px);
-    background-color: #2d2d3f;
-    color:  #5d65ff;
+    background-color: #3a3c44;
+    color:  #D8D8Df;
     display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 header { 
     width:100vw;
-    background-color:  #5d65ff;
-    padding: 10px;
+    background-color: #3a3c44;
+    border:6px solid #5BB8Fe;
+    padding: 15px;
     text-align: center;
     
     
 }
+header nav ul { 
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+    margin: 0 15px;
+}
 header nav ul li a {
-    
-    color: #2d2d3f;
+    display: inline-block;
+    color: #D8D8Df;
     text-decoration: none;
     font-weight: bold;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1em;
     
+}
+header nav ul li a:hover {
+    color: #7390ff;
 }
 main h1 { 
     font-size: 3em;
-    color:#5d65ff;
+    color:#D8D8Df;
     text-align: center;
-    border: 4px solid  #5d65ff;
+    border: 5px solid  #7390ff;
+    border-radius: 10px;
     padding: 10px;
     display: inline-block;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 0px;
 
 }
@@ -66,31 +82,56 @@ main h1 {
 .interested {
     font-size: 1.2em;
     margin-bottom: 40px;
-    color:rgb(85, 135, 255)
+    font-weight:500;
+    color:#5BB8Fe
 }
 .down-arrow {
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 30px solid rgb(85, 135, 255);
+    border-top: 30px solid #5BB8Fe;
+    border-radius: 5px;
     margin: 10px auto;
 }
 .join-link {
-    background-color:  rgb(85, 135, 255);
-    color: #2d2d3f;
-    padding: 20px 40px;
+    display:block;
+    background-color:  #3f3f3f;
+    color: #ffd087;
+    padding: 10px 0px;
     text-decoration: none;
     font-weight: bold;
+    font-style: italic;
+    border: 5px solid  #ffd087;
     border-radius: 20px;
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 400px;
-    transition: transform 0.2s ease;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
 
 }
 .join-link:hover {
-    transform: scale(1.2);
+    transform: scale(1.03);
+    transition: transform .2s ease;
+    text-decoration: underline;
+}
+.remind-link {
+   
+    color: #ffec95;
+    padding: 20px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 400px;
+
+    
+    
+}
+.remind-link:hover {
+    transform: scale(1.1);
+    transition: transform .2s ease;
     text-decoration: underline;
 }
 .scroll-fade {
@@ -105,6 +146,7 @@ main h1 {
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 60px;
+    overflow-x: hidden;
 
 
 }
@@ -127,4 +169,52 @@ main h1 {
 
 .footer {
     display: inline
+}
+
+/* contact photos */
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+.photo-wrapper {
+    text-align: center;
+    padding: 10px;
+    border: 5px solid;
+    border-radius: 10px;
+    border-radius: 10px;
+    border-color: #ffd087;
+    max-width: 300px;
+}
+.photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 3px solid;
+    margin-bottom: 15px;
+}
+.photo-info h3 {
+    font-size: 1.5em;
+    color: #ffec95; 
+    margin-bottom: 5px;
+}
+.photo-info p {
+    font-size: .7em;
+    font-weight: 500;
+    color: #D8D8Df;
+    margin: 5px 0; 
+}
+.contacts-header { font-size: 3rem;
+    font-size: 3em;
+    color:#ffec95;
+    text-align: center;
+    border: 5px solid  #ffd087;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 0px;
 }
