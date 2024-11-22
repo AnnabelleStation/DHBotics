@@ -175,34 +175,38 @@ main h1 {
 .photo-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 40px;
+    flex-direction: row;
     margin: 40px auto;
 }
 .photo-wrapper {
+    justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 2vw;
     border: 5px solid;
     border-radius: 10px;
-    border-radius: 10px;
     border-color: #ffd087;
-    max-width: 300px;
+    max-width: 40vw;
+    max-height: 40vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
 }
 .photo {
-    width: 100%;
-    max-width: 300px;
+    max-width: 30vw;
     height: auto;
     border: 3px solid;
     margin-bottom: 15px;
 }
 .photo-info h3 {
-    font-size: 1.5em;
+    font-size: 3vw;
     color: #ffec95; 
     margin-bottom: 5px;
 }
 .photo-info p {
-    font-size: .7em;
+    font-size: 2.5vw;
     font-weight: 500;
     color: #D8D8Df;
     margin: 5px 0; 
